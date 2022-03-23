@@ -41,5 +41,16 @@ body {
 }
 
 .container-2 > * {
-  width: 25%;
+  width: 28%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 600px) {
+  .container-2 {
+    width: 60%;
+  }
+
+  .h {
+    width: 35%;
+  }
 }
