@@ -1,3 +1,45 @@
 body {
   background: peachpuff;
 }
+
+/* BUILD HELPER */
+* {
+  border: 1px solid steelblue;
+}
+
+/* Large Container */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 90vh;
+  margin: 10px;
+}
+
+.container > *,
+.container-2 > * {
+  margin: 5px;
+}
+
+.a {
+  width: 100%;
+  min-height: 15vh;
+}
+
+.h {
+  width: 100%;
+  min-height: 30vh;
+}
+
+/* Smaller container within the larger one */
+.container-2 {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  min-height: 30vh;
+}
+
+.container-2 > * {
+  width: 25%;
+}
