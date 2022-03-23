@@ -2,31 +2,51 @@ body {
   background: blanchedalmond;
 }
 
+/* BUILDER HELPER */
 * {
   border: 1px solid steelblue;
 }
 
+/* CONTAINER */
+/* ---------------------------------------- */
+
+/* items stacked on top of one another */
 .container {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
   margin: 10px;
   height: 90vh;
 }
 
+/* Basic styling for all flex items */
 .container > * {
   margin: 5px;
   text-align: center;
 }
 
+/* A is 1/4 of space */
 .a {
   flex-grow: 1;
 }
 
+/* B is 1/2 of space */
 .b {
   flex-grow: 2;
 }
 
+/* C is 1/4 of space */
 .c {
   flex-grow: 1;
+}
+
+/* MEDIA QUERIES */
+/* --------------------------- */
+@media (min-width: 600px) {
+  .container {
+    flex-flow: row wrap;
+  }
+
+  .a {
+    width: 100%;
+  }
 }
