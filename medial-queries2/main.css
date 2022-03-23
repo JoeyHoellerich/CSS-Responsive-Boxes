@@ -1,11 +1,12 @@
 body {
   background: papayawhip;
 }
-
+/* BUILD HELPER */
 * {
   border: 1px solid steelblue;
 }
 
+/* Large Container */
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -18,6 +19,7 @@ body {
   margin: 5px;
 }
 
+/* Smaller Container within larger one */
 .container-2 {
   display: flex;
   flex-flow: row wrap;
