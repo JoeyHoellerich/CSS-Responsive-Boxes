@@ -1,3 +1,38 @@
 body {
   background: papayawhip;
 }
+
+* {
+  border: 1px solid steelblue;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+  height: 90vh;
+  justify-content: space-between;
+}
+
+.container > * {
+  margin: 5px;
+}
+
+.a {
+  width: 100%;
+}
+
+.b {
+  width: 100%;
+  min-height: 30vh;
+}
+
+.c,
+.d,
+.e {
+  width: 25%;
+}
+
+.f {
+  width: 100%;
+}
